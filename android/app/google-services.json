@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "128973032792",
+    "firebase_url": "https://seclab-bd25b-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "seclab-bd25b",
+    "storage_bucket": "seclab-bd25b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128973032792:android:a7305e0e1743e5ea4be92d",
+        "android_client_info": {
+          "package_name": "com.example.seclab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs9K0emchhrRTy97sHX-NfaBLjVwfgp1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
