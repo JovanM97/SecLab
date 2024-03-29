@@ -449,30 +449,40 @@ class Level3Quiz extends StatefulWidget {
 class _Level3QuizState extends State<Level3Quiz> {
 
   int currentStep = 0;
-  int totalQuestions = 2;
+  int totalQuestions = 4;
 
   final List<String> questions = [
     'Izaberite najjaču šifru od ponudjenih? (username: Marko)',
     'Izaberite najslabiju šifru od ponudjenih? (username: Petar)',
+    'Koji od ponuđenih odgovora predstavlja efikasnu meru zaštite naloga?',
+    'Koji od ponuđenih odgovora predstavlja dobru praksu za zaštitu naloga?',
   ];
 
   final List<String> answersA = [
     'marko123',
     'PetarPeric123',
+    'Korišćenje jake i jedinstvene lozinke',
+    'Deljenje lozinke sa bliskim prijateljima',
   ];
   final List<String> answersB = [
     'MarkoMarko123',
     'Pera123!',
+    'Omogućiti dvofaktorsku autentifikaciju',
+    'Korišćenje različite lozinke na različitim nalozima',
   ];
   final List<String> answersC = [
     'Marko123#',
     'PeraPeric147896325',
+    'Korišćenje filtera za spam poruke',
+    'Korišćenje iste lozinke na više naloga',
   ];
   final List<String> answersD = [
     'MarkoMarkovic',
     'petar123',
+    'Sve od ponudjenog',
+    'Napraviti spisak lozinki i držati na vidljivom mestu',
   ];
-  final List<String> corrects = ['C', 'D'];
+  final List<String> corrects = ['C', 'D', 'D', 'B'];
 
   Color? colorA;
   Color? colorB;

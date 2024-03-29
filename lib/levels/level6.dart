@@ -227,35 +227,45 @@ class Level6Quiz extends StatefulWidget {
 class _Level6QuizState extends State<Level6Quiz> {
 
   int currentStep = 0;
-  int totalQuestions = 3;
+  int totalQuestions = 5;
 
   final List<String> questions = [
+    'Šta je ključ za enkripciju?',
+    'Šta je algoritam za enkriptovanje?',
     'Poruka "Message" je enkriptovana kljucem ABC (A+A=B, A+B=C, A+C=D). Kako izgleda enkriptovana poruka?',
     'Poruka "Tajna Poruka" je enkriptovana metodom "slovo + 2" (A->C, B->D,..., X->Z, Y->A, Z->B). Kako izgleda enkriptovana poruka?',
     'Poruka "Tajna Poruka" je enkriptovana metodom (A->Z, B->Y, C->X..., X->C, Y->B, Z->A). Kako izgleda enkriptovana poruka?'
   ];
 
   final List<String> answersA = [
+    'Ključ je matematički parametar ili niz koji se koristi za enkripciju teksta',
+    'Skup instrukcija za popravljanje oštećenih fajlova',
     'Ngvveh',
     'Vclbn Rsikan',
     'Fprmn Skanfw'
   ];
   final List<String> answersB = [
+    'Šifra za pristup internetu',
+    'Tehnika za povećanje brzine računara',
     'Ngvtih',
     'Vqcae Krpcas',
     'Gzyhz Klisax'
   ];
   final List<String> answersC = [
+    'Tajna lokacija na računaru gde se čuvaju enkriptovane datoteke',
+    'Metoda za pravljenje rezervnih kopija podataka',
     'Naveir',
     'Vclpc Rqtwmc',
     'Dasfx Jmlkji'
   ];
   final List<String> answersD = [
+    'Univerzalni broj koji se koristi za otključavanje svih enkriptovanih podataka',
+    'Matematički proces ili set instrukcija koji se primenjuju na originalni tekst kako bi se generisao šifrovani tekst',
     'Mcvvaq',
     'Gljac Rimikm',
     'Gzqmz Klifpz'
   ];
-  final List<String> corrects = ['B', 'C', 'D'];
+  final List<String> corrects = ['A', 'D', 'B', 'C', 'D'];
 
   Color? colorA;
   Color? colorB;
