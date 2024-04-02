@@ -57,29 +57,6 @@ class _Level3State extends State<Level3> {
                 SizedBox(
                   height: 20,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 150),
-                  child: StepProgressIndicator(
-                    totalSteps: totalSteps,
-                    currentStep: widget.currentStep + 1,
-                    padding: 5,
-                    size: 15,
-                    selectedColor: Colors.amber,
-                    unselectedColor: Colors.indigo.shade600,
-                    customStep: (index, color, _) => color == Colors.green
-                        ? Container(
-                            decoration:
-                                BoxDecoration(color: color, shape: BoxShape.circle),
-                          )
-                        : Container(
-                            decoration:
-                                BoxDecoration(color: color, shape: BoxShape.circle),
-                          ),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
                 levelParts[widget.levelIndex],
               ],
             ),
@@ -254,6 +231,29 @@ class _PWMinigameState extends State<PWMinigame> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 150),
+          child: StepProgressIndicator(
+            totalSteps: totalSteps,
+            currentStep: 1,
+            padding: 5,
+            size: 15,
+            selectedColor: Colors.amber,
+            unselectedColor: Colors.indigo.shade600,
+            customStep: (index, color, _) => color == Colors.green
+                ? Container(
+              decoration:
+              BoxDecoration(color: color, shape: BoxShape.circle),
+            )
+                : Container(
+              decoration:
+              BoxDecoration(color: color, shape: BoxShape.circle),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
         Animate(
           target: canAnim ? 0 : 1,
           effects: [
@@ -573,6 +573,29 @@ class _Level3QuizState extends State<Level3Quiz> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 150),
+          child: StepProgressIndicator(
+            totalSteps: totalSteps,
+            currentStep: currentStep + 1,
+            padding: 5,
+            size: 15,
+            selectedColor: Colors.amber,
+            unselectedColor: Colors.indigo.shade600,
+            customStep: (index, color, _) => color == Colors.green
+                ? Container(
+              decoration:
+              BoxDecoration(color: color, shape: BoxShape.circle),
+            )
+                : Container(
+              decoration:
+              BoxDecoration(color: color, shape: BoxShape.circle),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
         Container(
           height: 200,
           margin: const EdgeInsets.fromLTRB(20, 10, 20, 10),
