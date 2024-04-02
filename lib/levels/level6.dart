@@ -4,7 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:SecLab/levels/lvlDone.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-int totalSteps = 4;
+int totalSteps = 6;
 
 class Level6 extends StatefulWidget {
   Level6({super.key, required this.currentStep, required this.levelIndex});
